@@ -26,3 +26,16 @@ npm run build
 ```bash
 npm run preview
 ```
+
+## Convert images to avif
+### Windows
+```powershell
+.\convert-to-avif.ps1
+# or in cmd
+powershell -File .\convert-to-avif.ps1
+```
+
+### Linux
+```bash
+./convert-to-avif.sh
+```
