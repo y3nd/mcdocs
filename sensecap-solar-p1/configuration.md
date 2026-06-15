@@ -59,19 +59,16 @@ europe
 fr
 ```
 
-Ensuite les régions sont spécifiques au département. Exemple ici pour le **Var**
+Ensuite les régions sont spécifiques au département et sa région administrative. Exemple ici pour le **Var**
 
-**France sud-est**
+**Régions pour le département du Var (83)**
 ```bash
-ch-fr
-fr-sud-est
-it-fr
 fr-83
 fr-pac
 ```
 
 :::info
-Un cas spécial est à noter pour les répéteurs de frontière entre 2 départements. Ces répéteurs peuvent être utiles pour les 2 départements à la fois et donc peuvent intégrer les régions des 2 départements. A noter que cela doit être fait **__uniquement__** si le répéteur est utile au routage au sein de chacun ces 2 départements. L'objectif ici n'est pas de faire le pont entre 2 départements.
+Un cas spécial est à noter pour les répéteurs de frontière entre 2 départements. Ces répéteurs peuvent être utiles pour les 2 départements à la fois et donc peuvent intégrer les régions des 2 départements. À noter que cela doit être fait **__uniquement__** si le répéteur est utile au routage au sein de chacun ces 2 départements. L'objectif ici n'est pas de faire le pont entre 2 départements.
 :::
 
 <MeshCoreRegionBuilder />

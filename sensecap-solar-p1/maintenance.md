@@ -13,6 +13,11 @@ L'outil trace path permet de régulièrement tester les valeurs en émission et 
 
 Voir la section [Validation](./validation.md) pour plus d'informations sur les tests à réaliser.
 
+## Date et heure
+L'heure et la date du répéteur sont importantes pour le bon fonctionnement du réseau maillé. Il est recommandé de vérifier régulièrement que l'heure et la date sont correctes, surtout après une mise à jour du firmware ou un redémarrage du répéteur. L'heure peut également se décaler dans le temps, surtout si le GPS est désactivé.
+
+Pour cela, il suffit de se connecter au répéteur via le companion et de vérifier l'heure et la date dans la console d'administration, onglet **Status**.
+
 ## Mise à jour du firmware
 *Informations provenant de [GitHub oltaco/Adafruit_nRF52_Bootloader_OTAFIX](https://github.com/oltaco/Adafruit_nRF52_Bootloader_OTAFIX)*
 

@@ -19,5 +19,5 @@ Il est recommandé de vérifier que le bootloader OTAFIX est installé avant de 
 :::
 
 :::warning
-Il peut y avoir des versions spécifiques avec des problèmes connus. La version actuellement recommandée pour les répéteurs est la `v1.15.0`
+Il peut y avoir des versions spécifiques avec des problèmes connus. La version actuellement recommandée pour les répéteurs est la `v1.16.0`
 :::

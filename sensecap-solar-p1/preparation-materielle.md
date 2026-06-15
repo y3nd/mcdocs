@@ -34,3 +34,16 @@ Certaines pièces métalliques comme la plaque qui supporte le boitier et l'ante
 6. Les LEDs de l'appareil sont très lumineuses et peuvent être visibles de loin. Il est recommandé de les couvrir avec du ruban adhésif opaque type scotch d'électricien pour éviter d'attirer l'attention sur le répéteur.
 7. Serrer fort les élements et mettre du frein filet sur les vis pour éviter qu'elles ne se desserrent avec les vibrations que peuvent provoquer le vent.
 8. Ne pas serrer trop fort le connecteur SMA pour éviter d'endommager le boitier. Des clés dynamométriques sont disponibles pour ce type de connecteur et permettent de serrer à la bonne force (0.5 à 0.9 Nm).
+
+:::warning
+Attention aux éventuelles incompatibilités entre SMA et RP-SMA.
+:::
+
+:::warning
+Eviter de monter le répéteur lorsque celui-ci est allumé. Il est recommandé de l'éteindre pendant les manipulations et surtout quand aucune antenne n'est connectée. Le répéteur peut être endommagé si il est allumé sans antenne.
+Pour cela, entrer la commande suivante dans la console du répéteur, soit par série USB, soit par le companion :
+```bash
+poweroff
+```
+[Console série USB web WEBTERM](https://webterm.y3n.co/)
+:::
