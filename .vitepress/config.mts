@@ -69,6 +69,7 @@ export default defineConfig({
           { text: 'Placement', link: '/sensecap-solar-p1/placement' },
           { text: 'Validation', link: '/sensecap-solar-p1/validation' },
           { text: 'GPS', link: '/sensecap-solar-p1/gps' },
+          { text: 'Maintenance', link: '/sensecap-solar-p1/maintenance' },
         ]
       },
       {
