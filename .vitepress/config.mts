@@ -58,6 +58,16 @@ export default defineConfig({
     //logo: '/logo.svg',
     sidebar: [
       {
+        text: 'MESHCORE',
+        items: [
+          { text: 'Paramètres radio', link: '/meshcore/parametres-radio' },
+          { text: 'Nommage des noeuds', link: '/meshcore/nommage-noeuds' },
+          { text: 'Configuration des Compagnons', link: '/meshcore/configuration-companion' },
+          { text: 'Configuration des répéteurs', link: '/meshcore/configuration-repeteur' },
+          { text: 'Association Canaux-Régions', link: '/meshcore/canaux-et-regions' },
+        ]
+      },
+      {
         text: 'Sensecap Solar P1',
         link: '/sensecap-solar-p1',
         items: [
@@ -78,7 +88,7 @@ export default defineConfig({
       },
       {
         text: 'Outils',
-        link: '/outils',
+        // link: '/outils',
         items: [
           { text: 'Inverseur de chemin', link: '/outils/inverseur-de-chemin' },
         ]
