@@ -6,6 +6,6 @@
     "upgrade": "npx npm-check-updates -u && npm install"
   },
   "devDependencies": {
-    "vitepress": "^2.0.0-alpha.16"
+    "vitepress": "^2.0.0-alpha.18"
   }
 }
