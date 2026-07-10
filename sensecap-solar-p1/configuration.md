@@ -55,7 +55,7 @@ Les régions permettent de limiter la propagation des messages à une zone géog
 
 Les paramètres de régions sont spécifiques à l'endroit où va être placé le répéteur. Les régions à mettre en **France** sont
 ```bash
-europe
+eu
 fr
 ```
 

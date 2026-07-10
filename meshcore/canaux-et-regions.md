@@ -3,7 +3,7 @@ L'association "canaux-regions" sur votre nœud compagnon permettra de filtrer le
 :::info
 - Dans le département du Var, votre canal `#var` doit être restreint à la région `fr-83`.
 - Lorsqu'un message est émis sur ce canal, il est retransmis de répéteur en répéteur, à condition que la région `fr-83` soit listée dans leur configuration.
-- Le premier répéteur du département voisin qui aura par exemple comme régions `europe` + `fr` + `fr-pac` + `fr-13` recevra le message, mais comme fr-83 n'est pas dans sa liste, il ne relaiera pas votre message.
+- Le premier répéteur du département voisin qui aura par exemple comme régions `eu` + `fr` + `fr-pac` + `fr-13` recevra le message, mais comme fr-83 n'est pas dans sa liste, il ne relaiera pas votre message.
 - Si jamais le message rencontre un répéteur qui n'a pas de régions explicitement définies (c'est-à-dire qu'il a juste `*` de défini), alors le message ne sera pas répété.
 :::
 
@@ -15,7 +15,7 @@ Ouvrez un canal, rendez-vous sur les 3 points en haut à droite et cliquez sur *
 
 | Canal      | Région associée |
 | ---------- | --------------- |
-| Public     | europe          |
+| Public     | eu              |
 | #fr        | fr              |
 | #emergency | fr-pac          |
 | #info      | fr-pac          |

@@ -277,7 +277,7 @@ const selectedValues = computed(() => {
   const isOverseasDepartment = overseasDepartmentCodes.includes(selectedCode.value);
   const regions = regionMap[selectedCode.value];
 
-  const parts = ["europe", "fr"];
+  const parts = ["eu", "fr"];
 
   if (!isOverseasDepartment && regions && regions.length > 0) {
     parts.push(...regions);
