@@ -6,6 +6,8 @@ MCB (MeshCore Beacon) est le nom du protocole et projet pour l'utilisation de ba
 ## Companion
 Le firmware MeshCore MCB modifié permet affiche un nouvel écran sur les companions MeshCore, permettant de configurer et activer le mode balise. Il est également possible de faire la configuration via la ligne série en USB ou Bluetooth. Pour l'instant le seul matériel supporté est le Seeedstudio Wio Tracker L1-Pro.
 
+### [Commandes de la console](companion-cli.md)
+
 ### Fonctionnalités
 - Activation/désactivation
 - Envoi uniquement si le GPS a fix
