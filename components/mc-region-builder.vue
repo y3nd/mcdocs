@@ -292,8 +292,8 @@ const cliCommands = computed(() => {
   }
 
   return [
-    ...selectedValues.value.map((value) => `region put ${value}`),
-    ...selectedValues.value.map((value) => `region allowf ${value}`),
+    `region def ${[...selectedValues.value].join(" ")}`,
+    `region default fr`,
     "region save",
   ].join("\n");
 });

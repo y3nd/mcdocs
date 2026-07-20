@@ -38,15 +38,19 @@ Indiquer dans les informations de contact un moyen de contacter le propriétaire
 ## Paramètres radios et de réseau
 Le plus simple est d'utiliser la console pour insérer les paramètres suivants :
 ```bash
-set advert.interval 120
+set advert.interval 240
 set flood.advert.interval 24
-set agc.reset.interval 4
+set flood.max.unscoped 4
 set multi.acks 1
-set dutycycle 10
 set path.hash.mode 1
 set loop.detect minimal
+set dutycycle 10
+set agc.reset.interval 4
 set repeat on
 set guest.password ''
+region default fr
+region save
+clock sync
 ```
 *Paramètres issus de [meshcore.fr](https://www.meshcore.fr/)*
 
