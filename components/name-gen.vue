@@ -52,7 +52,8 @@ const normalizedDepartement = computed(() =>
 );
 
 // Trim normalized place to 10 characters to avoid generating names that are too long
-const normalizedPlace = computed(() => placeName.value.trim().substring(0, 10));
+// replace whitespace with a dash
+const normalizedPlace = computed(() => placeName.value.trim().substring(0, 10).replace(/\s+/g, '-'));
 
 const error = computed(() => {
   if (!departement.value.trim()) {
