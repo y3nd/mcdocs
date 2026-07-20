@@ -71,7 +71,7 @@ const generatedName = computed(() => {
     return "";
   }
 
-  return `${normalizedDepartement.value}-${normalizedPlace.value}`;
+  return `FR${normalizedDepartement.value}-${normalizedPlace.value}`;
 });
 
 async function copyGeneratedName() {
