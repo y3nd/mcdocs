@@ -2,7 +2,7 @@ import { defineConfig } from 'vitepress'
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "mcdocs.y3n.co",
+  title: "meshcore.f4nlv.fr",
   description: "Documentation",
   //head: [['link', { rel: 'icon', href: '/logo.svg' }]],
   lastUpdated: true,

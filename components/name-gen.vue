@@ -2,7 +2,6 @@
 import { computed, ref } from "vue";
 
 const departement = ref("");
-const cityName = ref("");
 const placeName = ref("");
 
 const props = defineProps({
@@ -17,30 +16,24 @@ const messages = {
     title: "Generate MeshCore repeater name",
     departementLabel: "Département number",
     departementPlaceholder: "Example: 75",
-    cityLabel: "City name",
-    cityPlaceholder: "Example: Paris",
     placeLabel: "Place name",
     placePlaceholder: "Example: Montmartre",
     resultLabel: "Generated name",
     copy: "Copy",
     copied: "Copied!",
     departementRequired: "Please enter a département number.",
-    cityRequired: "Please enter a city name.",
     placeRequired: "Please enter a place name.",
   },
   fr: {
     title: "Générer un nom de répéteur MeshCore",
     departementLabel: "Numéro de département",
     departementPlaceholder: "Exemple : 75",
-    cityLabel: "Nom de la commune",
-    cityPlaceholder: "Exemple : Paris",
     placeLabel: "Nom du lieu",
     placePlaceholder: "Exemple : Montmartre",
     resultLabel: "Nom généré",
     copy: "Copier",
     copied: "Copié !",
     departementRequired: "Veuillez saisir un numéro de département.",
-    cityRequired: "Veuillez saisir un nom de commune.",
     placeRequired: "Veuillez saisir un nom de lieu.",
   },
 };
@@ -48,32 +41,6 @@ const messages = {
 const t = computed(() => messages[props.lang] ?? messages.en);
 
 const copied = ref(false);
-
-function normalizeText(value, maxLength) {
-  return value
-    .normalize("NFD")
-    .replace(/[\u0300-\u036f]/g, "")
-    .replace(/\b(saint|sainte|le|la|les|de|du|des)\b/gi, (match) => {
-      switch (match.toLowerCase()) {
-        case "saint":
-        case "sainte":
-          return "S";
-        case "le":
-        case "la":
-        case "les":
-          return "L";
-        case "de":
-        case "du":
-        case "des":
-          return "D";
-        default:
-          return match;
-      }
-    })
-    .replace(/[^A-Z0-9]/gi, "")
-    .toUpperCase()
-    .slice(0, maxLength);
-}
 
 const normalizedDepartement = computed(() =>
   departement.value
@@ -84,19 +51,12 @@ const normalizedDepartement = computed(() =>
     .slice(0, 3),
 );
 
-const normalizedCity = computed(() => normalizeText(cityName.value, 4));
-
-//const normalizedPlace = computed(() => normalizeText(placeName.value, 4));
 // Trim normalized place to 10 characters to avoid generating names that are too long
 const normalizedPlace = computed(() => placeName.value.trim().substring(0, 10));
 
 const error = computed(() => {
   if (!departement.value.trim()) {
     return t.value.departementRequired;
-  }
-
-  if (!cityName.value.trim()) {
-    return t.value.cityRequired;
   }
 
   if (!placeName.value.trim()) {
@@ -111,7 +71,7 @@ const generatedName = computed(() => {
     return "";
   }
 
-  return `${normalizedDepartement.value}${normalizedCity.value}-${normalizedPlace.value}`;
+  return `${normalizedDepartement.value}-${normalizedPlace.value}`;
 });
 
 async function copyGeneratedName() {
@@ -147,20 +107,6 @@ async function copyGeneratedName() {
           type="text"
           inputmode="text"
           :placeholder="t.departementPlaceholder"
-        >
-      </label>
-
-      <label class="meshcore-name-generator__field" for="city-input">
-        <span class="meshcore-name-generator__label">
-          {{ t.cityLabel }}
-        </span>
-
-        <input
-          id="city-input"
-          v-model="cityName"
-          class="meshcore-name-generator__input"
-          type="text"
-          :placeholder="t.cityPlaceholder"
         >
       </label>
 

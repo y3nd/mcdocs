@@ -1,4 +1,4 @@
-# [mcdocs.y3n.co](https://mcdocs.y3n.co)
+# [meshcore.f4nlv.fr](https://meshcore.f4nlv.fr)
 Personal docs for MeshCore
 
 ## Requirements
@@ -7,8 +7,8 @@ Personal docs for MeshCore
 ## Usage
 - Clone
 ```bash
-git clone https://github.com/y3n/mcdocs.y3n.co.git
-cd mcdocs.y3n.co
+git clone https://github.com/y3n/meshcore.f4nlv.fr.git
+cd meshcore.f4nlv.fr
 ```
 - Install dependencies
 ```bash
