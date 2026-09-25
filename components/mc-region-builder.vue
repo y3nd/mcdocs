@@ -9,6 +9,7 @@ const props = defineProps({
 });
 
 const selectedCode = ref("");
+const selectedSubRegion = ref("");
 const searchQuery = ref("");
 const copied = ref(false);
 
@@ -224,10 +225,18 @@ const labels = {
 
 const overseasDepartmentCodes = ["fr-971", "fr-972", "fr-973", "fr-974", "fr-976"];
 
+const subRegions = {
+  "fr-83": [
+    { code: "tln", label: "Canton de Toulon" },
+  ],
+};
+
 const messages = {
   fr: {
     title: "Générateur de région MeshCore France",
     searchPlaceholder: "Rechercher un département...",
+    subRegionTitle: "Sous-région (facultatif)",
+    noSubRegion: "Aucune sous-région",
     resultTitle: "Résultat",
     cliTitle: "CLI",
     copy: "Copier",
@@ -238,6 +247,8 @@ const messages = {
   en: {
     title: "MeshCore France region generator",
     searchPlaceholder: "Search for a department...",
+    subRegionTitle: "Sub-region (optional)",
+    noSubRegion: "No sub-region",
     resultTitle: "Result",
     cliTitle: "CLI",
     copy: "Copy",
@@ -269,6 +280,8 @@ const filteredDepartments = computed(() => {
   });
 });
 
+const availableSubRegions = computed(() => subRegions[selectedCode.value] ?? []);
+
 const selectedValues = computed(() => {
   if (!selectedCode.value) {
     return [];
@@ -283,7 +296,16 @@ const selectedValues = computed(() => {
     parts.push(...regions);
   }
 
-  return [...parts, selectedCode.value];
+  const values = [...parts, selectedCode.value];
+
+  if (
+    selectedSubRegion.value &&
+    availableSubRegions.value.some(({ code }) => code === selectedSubRegion.value)
+  ) {
+    values.push(selectedSubRegion.value);
+  }
+
+  return values;
 });
 
 const cliCommands = computed(() => {
@@ -307,6 +329,7 @@ function normalizeText(value) {
 
 function selectDepartment(code) {
   selectedCode.value = code;
+  selectedSubRegion.value = "";
   copied.value = false;
 }
 
@@ -384,6 +407,30 @@ function fallbackCopy(text) {
       </section>
 
       <section class="meshcore-builder__panel">
+        <div
+          v-if="availableSubRegions.length"
+          class="meshcore-builder__box"
+        >
+          <label class="meshcore-builder__field">
+            <strong>{{ t.subRegionTitle }}</strong>
+
+            <select
+              v-model="selectedSubRegion"
+              class="meshcore-builder__select"
+              @change="copied = false"
+            >
+              <option value="">{{ t.noSubRegion }}</option>
+              <option
+                v-for="subRegion in availableSubRegions"
+                :key="subRegion.code"
+                :value="subRegion.code"
+              >
+                {{ subRegion.label }}
+              </option>
+            </select>
+          </label>
+        </div>
+
         <div class="meshcore-builder__box">
           <strong>{{ t.resultTitle }}</strong>
 
@@ -484,6 +531,22 @@ function fallbackCopy(text) {
 
 .meshcore-builder__input::placeholder {
   color: var(--mc-text-muted);
+}
+
+.meshcore-builder__field {
+  display: grid;
+  gap: 8px;
+}
+
+.meshcore-builder__select {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 8px;
+  border: 1px solid var(--mc-border);
+  border-radius: 8px;
+  background: var(--mc-input-bg);
+  color: var(--mc-text);
+  font: inherit;
 }
 
 .meshcore-builder__list {

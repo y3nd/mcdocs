@@ -22,7 +22,9 @@ Certaines pièces métalliques comme la plaque qui supporte le boitier et l'ante
 - [option] Clé(s) dynamométrique(s) pour connecteurs SMA et type N
 
 ## Image de référence
-<img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/accessory.png" alt="isolated" width="200"/>
+<a target="_blank" href="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/accessory.png">
+  <img src="https://files.seeedstudio.com/wiki/SenseCAP/Meshtastic/accessory.png" alt="isolated" width="200"/>
+</a>
 
 ## Montage
 1. Mettez dès à présent le boitier à charger.
@@ -46,4 +48,8 @@ Pour cela, entrer la commande suivante dans la console du répéteur, soit par s
 poweroff
 ```
 [Console série USB web WEBTERM](https://webterm.y3n.co/)
+:::
+
+:::warning
+Pour stocker le répéteur sur le long terme, il est nécessaire d'enlever les cellules puis de les remettre. Le réveil se fait ensuite en alimentant le répéteur via le port USB-C.
 :::

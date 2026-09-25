@@ -9,3 +9,10 @@ gps on
 :::info
 Il est recommandé d'activer le GPS pour la synchronisation de l'heure du système, mais **cela augmente la consommation** du répéteur. Cette fonctionnalité peut être désactivée et l'heure mise à jour à manuellement via l'interface administrateur afin de réduire la consommation.
 :::
+
+:::info
+Certains firmwares alternatifs permettent de réduire la consommation du GPS en ne l'allumant qu'un temps limité par jour pour synchroniser l'heure.
+
+Exemples:
+- [EasySkyMesh PowerSaving](https://github.com/IoTThinks/EasySkyMesh/releases)
+:::

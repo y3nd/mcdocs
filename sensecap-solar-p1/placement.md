@@ -41,9 +41,9 @@ La bride permettant de fixer sur un support rond est fournie avec le répéteur.
 La mât de support doit se situer sous l'antenne, ou alors l'antenne doit être orientée de manière à éviter que le mât ne vienne faire obstacle au signal. Il est recommandé de faire des tests d'orientation pour trouver la position optimale. Cette orientation peut être définie en fonction de la zone à couvrir et des répéteurs à voir.
 
 :::info
-Le répéteur Sensecap Solar P1 consomme très peu et dispose d'une très grande autonomie. Il n'est donc pas systématiquement nécessaire de l'orienter plein sud pour maximiser la production d'énergie. Il est recommandé de privilégier une orientation qui maximise la couverture du réseau maillé plutôt que la production d'énergie. Dans le cas d'un placement plein sud et avec une visibilité dégagée, il est possible de retirer certaines cellules Lithium.
+Le répéteur Sensecap Solar P1 consomme très peu d'énergie et dispose d'une très grande autonomie. Il n'est donc pas systématiquement nécessaire de l'orienter plein sud pour maximiser la production d'énergie. Il est recommandé de privilégier une orientation qui maximise la couverture du réseau maillé plutôt que la production d'énergie. Dans le cas d'un placement plein sud et avec une visibilité dégagée, il est possible de retirer certaines cellules Lithium.
 :::
 
 :::warning
-Bien vérifier l'absence de poussière, puis refermer correctement le port USB-C du boitier pour éviter les infiltrations d'eau et d'humidité qui peuvent endommager le répéteur.
+Bien vérifier l'absence de poussière sur le joint, puis refermer correctement le port USB-C du boitier pour éviter les infiltrations d'eau et d'humidité qui peuvent endommager le répéteur.
 :::

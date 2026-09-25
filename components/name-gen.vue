@@ -15,9 +15,9 @@ const messages = {
   en: {
     title: "Generate MeshCore repeater name",
     departementLabel: "Département number",
-    departementPlaceholder: "Example: 75",
+    departementPlaceholder: "Example: 83",
     placeLabel: "Place name",
-    placePlaceholder: "Example: Montmartre",
+    placePlaceholder: "Example: Mont Faron",
     resultLabel: "Generated name",
     copy: "Copy",
     copied: "Copied!",
@@ -27,9 +27,9 @@ const messages = {
   fr: {
     title: "Générer un nom de répéteur MeshCore",
     departementLabel: "Numéro de département",
-    departementPlaceholder: "Exemple : 75",
+    departementPlaceholder: "Exemple : 83",
     placeLabel: "Nom du lieu",
-    placePlaceholder: "Exemple : Montmartre",
+    placePlaceholder: "Exemple : Mont Faron",
     resultLabel: "Nom généré",
     copy: "Copier",
     copied: "Copié !",

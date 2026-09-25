@@ -60,7 +60,6 @@ export default defineConfig({
       {
         text: 'MESHCORE',
         items: [
-          { text: 'Paramètres radio', link: '/meshcore/parametres-radio' },
           { text: 'Nommage des noeuds', link: '/meshcore/nommage-noeuds' },
           { text: 'Configuration des Compagnons', link: '/meshcore/configuration-companion' },
           { text: 'Configuration des répéteurs', link: '/meshcore/configuration-repeteur' },
@@ -90,7 +89,9 @@ export default defineConfig({
         text: 'Outils',
         // link: '/outils',
         items: [
-          { text: 'Inverseur de chemin', link: '/outils/inverseur-de-chemin' },
+          { text: 'Inverseur chemin', link: '/outils/inverseur-de-chemin' },
+          { text: 'Générateur nom répéteur', link: '/outils/generateur-nom-repeteur' },
+          { text: 'Générateur régions', link: '/outils/generateur-commande-regions' },
         ]
       },
     ],
