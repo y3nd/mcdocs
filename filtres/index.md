@@ -4,6 +4,10 @@ next:
   text: Filtre SAW 868 MHz F4NLV
 ---
 
+<script setup>
+import filterImage from '../assets/img/filtre-868-f4nlv-ufl.avif'
+</script>
+
 # Filtres pour MeshCore
 La puce utilisée par la quasi-totalité des modules compatibles avec MeshCore, la Semtech SX1262, possède une bande passante en réception très large, de 150 à 960 MHz. Cette bande très large permet une grande flexibilité, mais elle peut aussi être source de perturbations et de bruits.
 
@@ -30,7 +34,7 @@ Les filtres SAW sont particulièrement adaptés pour MeshCore, car alignés avec
 
 <ProductCard
   title="Filtre SAW 868 MHz F4NLV"
-  image="/assets/img/filtre-868-f4nlv-ufl.avif"
+  :image="filterImage"
   link="/filtres/saw-868-f4nlv"
   tag="MeshCore · Filtre SAW · 868 MHz"
   description="Ce filtre est conçu pour la bande 868 MHz utilisée par MeshCore. Il offre une bonne sélectivité et une faible perte d'insertion, pour améliorer les performances de votre nœud MeshCore à prix et encombrement limités. De plus, il accepte une puissance maximale de 27 dBm, plus élevée que la plupart des autres filtres SAW."

@@ -1,9 +1,13 @@
+<script setup>
+import filterImage from '../assets/img/filtre-868-f4nlv-ufl.avif'
+</script>
+
 # Filtre SAW 868 MHz F4NLV
 ---
 
 <ProductCard
   title="Filtre SAW 868 MHz F4NLV"
-  image="/assets/img/filtre-868-f4nlv-ufl.avif"
+  :image="filterImage"
   tag="MeshCore · Filtre SAW · 868 MHz"
   link="mailto:filtres@f4nlv.fr?subject=Filtre SAW 868 MHz"
   linkText="Prendre contact"
