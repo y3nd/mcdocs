@@ -82,6 +82,13 @@ export default defineConfig({
         ]
       },
       {
+        text: 'Filtres',
+        link: '/filtres',
+        items: [
+          { text: 'Filtre SAW 868 MHz F4NLV', link: '/filtres/saw-868-f4nlv' },
+        ]
+      },
+      {
         text: 'Liens utiles',
         link: '/liens-utiles',
       },

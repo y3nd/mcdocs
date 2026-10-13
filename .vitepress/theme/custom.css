@@ -35,3 +35,63 @@
   --vp-c-accent-2: #ffc266;
   --vp-c-accent-3: #e69500;
 }
+
+
+.pdf-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 16px;
+}
+
+.pdf-button {
+  padding: 4px 8px;
+  border-radius: 6px;
+  background: var(--vp-c-brand-1);
+  color: white;
+  cursor: pointer;
+}
+
+@media print {
+  html,
+  body {
+    background: white !important;
+  }
+
+  *,
+  *::before,
+  *::after {
+    color: black !important;
+    -webkit-text-fill-color: black !important;
+    background-color: transparent !important;
+    text-shadow: none !important;
+  }
+
+  .VPNav,
+  .VPLocalNav,
+  .VPSidebar,
+  .VPDocAside,
+  .VPDocFooter,
+  .VPFooter,
+  .pdf-actions {
+    display: none !important;
+  }
+
+  .VPContent,
+  .VPDoc,
+  .VPDoc .content {
+    padding: 0 !important;
+    margin: 0 !important;
+  }
+
+  .VPDoc .container,
+  .VPDoc .content,
+  .VPDoc .content-container {
+    max-width: none !important;
+    width: 100% !important;
+  }
+
+  @page {
+    size: A4;
+    margin: 15mm;
+  }
+}

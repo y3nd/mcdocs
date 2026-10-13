@@ -24,7 +24,7 @@ if (-not (Test-Path -LiteralPath $InputPath)) {
 $InputRoot = (Resolve-Path -LiteralPath $InputPath).Path
 
 $files = Get-ChildItem -LiteralPath $InputRoot -Recurse -File |
-    Where-Object { $_.Extension -match '^\.(jpe?g|png|gif|webp)$' }
+    Where-Object { $_.Extension -match '^\.(jpe?g|png|gif|webp|bmp)$' }
 
 if (-not $files) {
     Write-Host "No supported image files found under: $InputRoot"

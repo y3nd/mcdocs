@@ -13,3 +13,4 @@ previous:
 - Kit MeshCore Seeedstudio: https://www.seeedstudio.com/MeshCore-Starter-Kit-Ready-to-Use-Off-Grid-Instant-Reliable-Communication.html
 - Câble d'antenne LMR190 Type N F vers RP-SMA: https://fr.aliexpress.com/item/1005010097280115.html - **Variante *type6-1pcs (RP-SMA male right angle), 30CM***
 - Antenne GIZONT Fibre de verre Type N M: https://www.aliexpress.com/item/1005005131974041.html - **Privilégier grandes longueurs 45 ou 55 cm pour les points hauts, petites longueurs pour les répéteurs à la maison et/ou en ville**
+- [Filtre SAW 868 MHz F4NLV](/filtres/saw-868-f4nlv) - **En cas de proximité d'antennes de téléphonie mobile, ce filtre permet de réduire les interférences et d'améliorer la sensibilité de réception.**

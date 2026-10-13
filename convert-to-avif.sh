@@ -29,7 +29,7 @@ Options:
   --help, -h           Show this help
 
 Supported input files:
-  .jpg, .jpeg, .png, .gif, .webp
+  .jpg, .jpeg, .png, .gif, .webp, .bmp
 
 Requires:
   ffmpeg with libaom-av1 support
